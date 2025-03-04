@@ -2,16 +2,17 @@
 ***
 
 ## Task
-TODO - What is the problem? And where is the challenge?
+What is the problem? And where is the challenge?
 
 ## Description
-TODO - How have you solved the problem?
+How have you solved the problem? This is a simple calculator application built with React.js. It allows users to perform basic arithmetic operations (+, -, *, /) and displays the result.
+
 
 ## Installation
-TODO - How to install your project? npm install? make? make re?
+How to install your project? npm install? make? make re?
 
 ## Usage
-TODO - How does it work?
+How does it work?  Open your browser and navigate to `http://localhost:3000`.
 ```
 ./my_project argument1 argument2
 ```
