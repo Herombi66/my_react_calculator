@@ -1,0 +1,49 @@
+.calculator {
+    width: 300px;
+    margin: 50px auto;
+    border: 1px solid #008080; /* Dark Blue/Teal border */
+    padding: 20px;
+    background-color: #80DAEB; /* Light Blue/Cyan background */
+  }
+    
+    .display {
+      background-color: white;
+      padding: 10px;
+      margin-bottom: 10px;
+      text-align: right;
+      border: 1px solid #ddd;
+    }
+    
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+    }
+    
+    .number { /* Style for number buttons */
+      background-color: #F0F0F0; /* Light Beige/Off-White */
+      padding: 10px;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+    
+    .operator { /* Style for operator buttons */
+      background-color: #FFFF00; /* Yellow */
+      padding: 10px;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+    
+    .clear { /* Style for the "C" (Clear) button */
+      background-color: #FFB6C1; /* Pink/Light Red */
+      padding: 10px;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+    
+    .calculate { /* Style for the "=" (Calculate) button */
+      background-color: #F0F0F0; /* You can customize this */
+      padding: 10px;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
