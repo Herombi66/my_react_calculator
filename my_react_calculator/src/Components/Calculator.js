@@ -3,9 +3,14 @@ import './Calculator.css';
 
 function Calculator() {
   const [display, setDisplay] = useState('');
-
+  const MAX_DISPLAY_LENGTH = 15; 
   const handleButtonClick = (value) => {
-    setDisplay((prevDisplay) => prevDisplay + value);
+    setDisplay((prevDisplay) => {
+      if (prevDisplay.length < MAX_DISPLAY_LENGTH) {
+        return prevDisplay + value;
+      }
+      return prevDisplay; 
+    });
   };
 
   const handleClear = () => {
@@ -14,7 +19,13 @@ function Calculator() {
 
   const handleCalculate = () => {
     try {
-      setDisplay(String(eval(display)));
+      const result = String(eval(display));
+      if (result.length > MAX_DISPLAY_LENGTH) {
+        setDisplay("Error");
+      } else {
+        setDisplay(result);
+      }
+
     } catch (error) {
       setDisplay('Error');
     }
